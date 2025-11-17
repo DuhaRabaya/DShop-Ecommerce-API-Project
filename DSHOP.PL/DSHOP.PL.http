@@ -1,0 +1,6 @@
+@DSHOP.PL_HostAddress = http://localhost:5051
+
+GET {{DSHOP.PL_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
