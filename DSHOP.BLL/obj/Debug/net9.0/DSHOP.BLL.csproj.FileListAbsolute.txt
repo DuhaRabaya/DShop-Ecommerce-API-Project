@@ -1,0 +1,16 @@
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\bin\Debug\net9.0\DSHOP.BLL.deps.json
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\bin\Debug\net9.0\DSHOP.BLL.dll
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\bin\Debug\net9.0\DSHOP.BLL.pdb
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\bin\Debug\net9.0\DSHOP.DAL.dll
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\bin\Debug\net9.0\DSHOP.DAL.pdb
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.csproj.AssemblyReference.cache
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.AssemblyInfoInputs.cache
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.AssemblyInfo.cs
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.csproj.CoreCompileInputs.cache
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.sourcelink.json
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.csproj.Up2Date
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.dll
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\refint\DSHOP.BLL.dll
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.pdb
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\ref\DSHOP.BLL.dll
