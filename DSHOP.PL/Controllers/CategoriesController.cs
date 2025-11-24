@@ -8,35 +8,32 @@ using DSHOP.DAL.DTO.Response;
 using DSHOP.DAL.DTO.Request;
 using DSHOP.DAL.Models;
 using Microsoft.EntityFrameworkCore;
+using DSHOP.DAL.Repository;
+using DSHOP.BLL.Service;
 
 namespace DSHOP.PL.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriesController : ControllerBase
-    {
-        private readonly ApplicationDbContext _context;
-        private readonly IStringLocalizer<SharedResource> _localizer;
+    {        private readonly IStringLocalizer<SharedResource> _localizer;
+        private readonly ICategoryService _categoryService;
 
-        public CategoriesController(ApplicationDbContext context, IStringLocalizer<SharedResource> localizer)
+        public CategoriesController(IStringLocalizer<SharedResource> localizer , ICategoryService categoryService)
         {
-            _context = context;
             _localizer = localizer;
+            _categoryService=categoryService;
         }
         [HttpGet("")]
         public IActionResult Index() {
-            var cats= _context.Categories.Include(c=>c.Translations).ToList();
-            var response= cats.Adapt<List<CategoryResponse>>();
-
+            var cats=_categoryService.GetAll();
           //  return Ok(_localizer["Success"]);
-            return Ok(new { message = _localizer["Success"].Value , response});
+            return Ok(new { message = _localizer["Success"].Value , cats});
         }
         [HttpPost("")]
         public IActionResult Create(CategoryRequest request)
         {
-            var cat = request.Adapt<Category>();
-            _context.Categories.Add(cat);
-            _context.SaveChanges();
+           var response= _categoryService.Create(request);
 
             return Ok(new { message = _localizer["Success"].Value });
         }
