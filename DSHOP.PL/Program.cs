@@ -1,17 +1,21 @@
 
 using DSHOP.BLL.Service;
 using DSHOP.DAL.Data;
+using DSHOP.DAL.Models;
 using DSHOP.DAL.Repository;
+using DSHOP.DAL.Utils;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
 using System.Globalization;
+using System.Threading.Tasks;
 
 namespace DSHOP.PL
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +30,9 @@ namespace DSHOP.PL
                 (options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             builder.Services.AddLocalization(options => options.ResourcesPath = "");
+
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
             const string defaultCulture = "en";
 
@@ -51,6 +58,11 @@ namespace DSHOP.PL
             builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
 
+            builder.Services.AddScoped<ISeedData, RoleSeedData>();
+            builder.Services.AddScoped<ISeedData, UserSeedData>();
+
+            builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+
             var app = builder.Build();
 
             //Configure the HTTP request pipeline.
@@ -66,6 +78,15 @@ namespace DSHOP.PL
 
             app.UseAuthorization();
 
+            using (var scope=app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var seeders= services.GetServices<ISeedData>();
+
+                foreach(var seeder in seeders){
+                    await seeder.DataSeed();
+                }
+            }
 
             app.MapControllers();
 

@@ -1,5 +1,6 @@
 ﻿using DSHOP.DAL.Data;
 using DSHOP.DAL.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -30,5 +31,5 @@ namespace DSHOP.DAL.Repository
         {
             return _context.Categories.Include(c => c.Translations).ToList();
         }
-    }
+    } 
 }

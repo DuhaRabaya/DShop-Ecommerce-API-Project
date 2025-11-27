@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.pl\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|solutionrelative:dshop.pl\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.dal\\utils\\userseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|solutionrelative:dshop.dal\\utils\\userseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.dal\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|solutionrelative:dshop.dal\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.bll\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|solutionrelative:dshop.bll\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.bll\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|solutionrelative:dshop.bll\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.bll\\service\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|solutionrelative:dshop.bll\\service\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.dal\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|solutionrelative:dshop.dal\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.pl\\areas\\identity\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|solutionrelative:dshop.pl\\areas\\identity\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|solutionrelative:dshop.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.bll\\service\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|solutionrelative:dshop.bll\\service\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ICategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\ICategoryService.cs",
-              "RelativeDocumentMoniker": "DSHOP.BLL\\Service\\ICategoryService.cs",
-              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\ICategoryService.cs",
-              "RelativeToolTip": "DSHOP.BLL\\Service\\ICategoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T11:25:19.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\CategoryService.cs",
-              "RelativeDocumentMoniker": "DSHOP.BLL\\Service\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\CategoryService.cs",
-              "RelativeToolTip": "DSHOP.BLL\\Service\\CategoryService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Areas\\Identity\\AccountController.cs",
+              "RelativeDocumentMoniker": "DSHOP.PL\\Areas\\Identity\\AccountController.cs",
+              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Areas\\Identity\\AccountController.cs",
+              "RelativeToolTip": "DSHOP.PL\\Areas\\Identity\\AccountController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T11:25:36.714Z",
+              "WhenOpened": "2025-11-27T15:40:26.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "DSHOP.PL\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "DSHOP.PL\\Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Title": "UserSeedData.cs",
+              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Utils\\UserSeedData.cs",
+              "RelativeDocumentMoniker": "DSHOP.DAL\\Utils\\UserSeedData.cs",
+              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Utils\\UserSeedData.cs",
+              "RelativeToolTip": "DSHOP.DAL\\Utils\\UserSeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T20:02:42.549Z",
+              "WhenOpened": "2025-11-27T15:38:14.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Repository\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "DSHOP.DAL\\Repository\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Repository\\CategoryRepository.cs",
-              "RelativeToolTip": "DSHOP.DAL\\Repository\\CategoryRepository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "DSHOP.BLL\\Service\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\AuthenticationService.cs",
+              "RelativeToolTip": "DSHOP.BLL\\Service\\AuthenticationService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T11:06:34.796Z",
+              "WhenOpened": "2025-11-27T15:19:30.257Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Repository\\ICategoryRepository.cs",
-              "RelativeDocumentMoniker": "DSHOP.DAL\\Repository\\ICategoryRepository.cs",
-              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Repository\\ICategoryRepository.cs",
-              "RelativeToolTip": "DSHOP.DAL\\Repository\\ICategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "DSHOP.BLL\\Service\\IAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\IAuthenticationService.cs",
+              "RelativeToolTip": "DSHOP.BLL\\Service\\IAuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T11:10:53.545Z",
+              "WhenOpened": "2025-11-27T15:19:07.81Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Program.cs",
               "RelativeDocumentMoniker": "DSHOP.PL\\Program.cs",
               "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Program.cs",
               "RelativeToolTip": "DSHOP.PL\\Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAQwDQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAQwEMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T11:09:14.295Z",
               "EditorCaption": ""

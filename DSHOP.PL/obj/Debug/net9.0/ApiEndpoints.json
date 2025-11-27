@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "DSHOP.PL.Areas.Identity.AccountController",
+    "Method": "Register",
+    "RelativePath": "api/auth/Account/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSHOP.DAL.DTO.Request.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DSHOP.PL.Controllers.CategoriesController",
     "Method": "Index",
     "RelativePath": "api/Categories",
