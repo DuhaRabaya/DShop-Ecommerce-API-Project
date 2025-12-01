@@ -20,7 +20,20 @@ namespace DSHOP.PL.Areas.Identity
         public async Task<IActionResult> Register(RegisterRequest request)
         {
             var result = await _authenticationService.RegisterAsync(request);
-
+            if (!result.Success)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login(LoginRequest request)
+        {
+            var result = await _authenticationService.LoginAsync(request);
+            if (!result.Success)
+            {
+                return BadRequest(result);
+            }
             return Ok(result);
         }
 
