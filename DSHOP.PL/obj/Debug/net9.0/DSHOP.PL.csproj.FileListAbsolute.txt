@@ -183,3 +183,4 @@ C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.PL\bin\Debug\net9.0\Microsoft.
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.PL\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.PL\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.PL\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.PL\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

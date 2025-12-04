@@ -3,9 +3,13 @@ using DSHOP.DAL.DTO.Response;
 using DSHOP.DAL.Models;
 using Mapster;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -15,10 +19,12 @@ namespace DSHOP.BLL.Service
     public class AuthenticationService : IAuthenticationService
     {
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IConfiguration _configuration;
 
-        public AuthenticationService(UserManager<ApplicationUser> userManager)
+        public AuthenticationService(UserManager<ApplicationUser> userManager , IConfiguration configuration)
         {
             _userManager = userManager;
+            _configuration = configuration;
         }
         public async Task<LoginResponse> LoginAsync(LoginRequest request)
         {
@@ -44,7 +50,8 @@ namespace DSHOP.BLL.Service
                 return new LoginResponse()
                 {
                     Success = true,
-                    Message = "Login success"
+                    Message = "Login success",
+                    AccessToken = await GenerateAccessToken(user)
                 };
             }
             catch (Exception ex) {
@@ -91,6 +98,28 @@ namespace DSHOP.BLL.Service
                     Errors = new List<string> { ex.Message }
                 };
             }
+        }
+
+
+        private async Task<string> GenerateAccessToken(ApplicationUser user) {
+            var userClaims = new List<Claim>()
+            {
+            new Claim(ClaimTypes.NameIdentifier, user.Id),
+            new Claim(ClaimTypes.Name, user.UserName),
+            new Claim(ClaimTypes.Email, user.Email),
+            };
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                issuer: _configuration["Jwt:Issuer"],
+                audience: _configuration["Jwt:Audience"],
+                claims: userClaims,
+                expires: DateTime.UtcNow.AddMinutes(30),
+                signingCredentials: creds);
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }

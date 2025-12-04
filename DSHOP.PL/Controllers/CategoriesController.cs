@@ -10,11 +10,13 @@ using DSHOP.DAL.Models;
 using Microsoft.EntityFrameworkCore;
 using DSHOP.DAL.Repository;
 using DSHOP.BLL.Service;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DSHOP.PL.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoriesController : ControllerBase
     {        private readonly IStringLocalizer<SharedResource> _localizer;
         private readonly ICategoryService _categoryService;
