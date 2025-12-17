@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSHOP.DAL.DTO.Response
 {
-    public class LoginResponse : BaseResponse
+    public class UpdatePasswordResponse: BaseResponse
     {
-       public string? AccessToken { get; set; }
     }
 }

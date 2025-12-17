@@ -44,5 +44,19 @@ namespace DSHOP.PL.Areas.Identity
             }
             return Ok(result);
         }
+        [HttpPost("SendCode")]
+        public async Task<IActionResult> ResetPassword(ResetPasswordRequest request)
+        {
+            var result = await _authenticationService.RequestPasswordReset(request);
+            if(!result.Success) return BadRequest(result);
+            return Ok(result);
+        }
+        [HttpPut("ResetPassword")]
+        public async Task<IActionResult> UpdatePassword(UpdatePasswordRequest request)
+        {
+            var result = await _authenticationService.RequestPasswordUpdate(request);
+            if (!result.Success) return BadRequest(result);
+            return Ok(result);
+        }
     }
 }
