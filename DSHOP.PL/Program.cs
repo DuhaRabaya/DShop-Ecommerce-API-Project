@@ -71,13 +71,6 @@ namespace DSHOP.PL
 
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-            builder.Services.AddScoped<ICategoryService, CategoryService>();
-
-            builder.Services.AddScoped<ISeedData, RoleSeedData>();
-            builder.Services.AddScoped<ISeedData, UserSeedData>();
-
-            builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 
             builder.Services.AddAuthentication(opt =>
             {
@@ -128,7 +121,8 @@ namespace DSHOP.PL
             });
             });
 
-            builder.Services.AddTransient<IEmailSender, EmailSender>();
+            AppConfiguration.Config(builder.Services);
+
             var app = builder.Build();
 
             //Configure the HTTP request pipeline.
