@@ -3,6 +3,7 @@ using DSHOP.DAL.DTO.Response;
 using DSHOP.DAL.Models;
 using Mapster;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -20,11 +21,17 @@ namespace DSHOP.BLL.Service
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IConfiguration _configuration;
-
-        public AuthenticationService(UserManager<ApplicationUser> userManager , IConfiguration configuration)
+        private readonly IEmailSender _emailSender;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+         
+        public AuthenticationService(UserManager<ApplicationUser> userManager , IConfiguration configuration ,
+            IEmailSender emailSender,
+            SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
             _configuration = configuration;
+            _emailSender = emailSender;
+            _signInManager = signInManager;
         }
         public async Task<LoginResponse> LoginAsync(LoginRequest request)
         {
@@ -38,8 +45,32 @@ namespace DSHOP.BLL.Service
                         Message="invalid Email"
                     };
                 }
-                var result=await _userManager.CheckPasswordAsync(user, request.Password);
-                if (!result)
+                if (await _userManager.IsLockedOutAsync(user))
+                {
+                    return new LoginResponse()
+                    {
+                        Success = false,
+                        Message="Account is Locked! try again later"
+                    };
+                }
+                var result=await _signInManager.CheckPasswordSignInAsync(user, request.Password , true);
+
+                if(result.IsLockedOut)
+                {
+                    return new LoginResponse()
+                    {
+                        Success = false,
+                        Message = "Account is Locked! too many attempts! try again later"
+                    };
+                }
+                else if (result.IsNotAllowed) {
+                    return new LoginResponse()
+                    {
+                        Success = false,
+                        Message = "please confirm your email"
+                    };
+                }
+                if (!result.Succeeded)
                 {
                     return new LoginResponse()
                     {
@@ -64,14 +95,13 @@ namespace DSHOP.BLL.Service
             }
 
         }
-
         public async Task<RegisterResponse> RegisterAsync(RegisterRequest request)
         {
             try
             {
                 var user = request.Adapt<ApplicationUser>();
                 var result = await _userManager.CreateAsync(user, request.Password);
-
+             
                 if (!result.Succeeded)
                 {
                     return new RegisterResponse()
@@ -83,7 +113,10 @@ namespace DSHOP.BLL.Service
                     };
                 }
                 await _userManager.AddToRoleAsync(user, "User");
-
+                var token= await _userManager.GenerateEmailConfirmationTokenAsync(user); 
+                token=Uri.EscapeDataString(token);
+                var email = $"http://localhost:5051/api/auth/Account/ConfirmEmail?token={token}&userId={user.Id}";
+                await _emailSender.SendEmailAsync(user.Email, "welcome", $"<h1>Welcom .. {user.FullName}</h1> <br> <a href='{email}'>Confirm Email</a>");
                 return new RegisterResponse()
                 {
                     Success = true,
@@ -100,7 +133,15 @@ namespace DSHOP.BLL.Service
             }
         }
 
+        public async Task<bool> ConfirmEmailAsync(string token , string userId)
+        {
+            var user= await _userManager.FindByIdAsync(userId);
+            if (user is null) return false;
 
+            var result =await _userManager.ConfirmEmailAsync(user, token);
+            if(!result.Succeeded) return false;
+            return true;
+        }
         private async Task<string> GenerateAccessToken(ApplicationUser user) {
             var userClaims = new List<Claim>()
             {

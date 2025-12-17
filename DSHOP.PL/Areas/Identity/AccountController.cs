@@ -26,6 +26,14 @@ namespace DSHOP.PL.Areas.Identity
             }
             return Ok(result);
         }
+
+        [HttpGet("ConfirmEmail")]
+        public async Task<IActionResult> ConfirmEmail(string token , string userId)
+        {
+            var result = await _authenticationService.ConfirmEmailAsync(token ,userId);
+            return Ok(result);
+        }
+
         [HttpPost("Login")]
         public async Task<IActionResult> Login(LoginRequest request)
         {
@@ -36,6 +44,5 @@ namespace DSHOP.PL.Areas.Identity
             }
             return Ok(result);
         }
-
     }
 }

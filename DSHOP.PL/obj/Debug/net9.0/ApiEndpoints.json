@@ -1,5 +1,42 @@
 [
   {
+    "ContainingType": "DSHOP.PL.Areas.Admin.CategoriesController",
+    "Method": "create",
+    "RelativePath": "api/admin/Categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSHOP.DAL.DTO.Request.CategoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DSHOP.PL.Areas.Identity.AccountController",
+    "Method": "ConfirmEmail",
+    "RelativePath": "api/auth/Account/ConfirmEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DSHOP.PL.Areas.Identity.AccountController",
     "Method": "Login",
     "RelativePath": "api/auth/Account/Login",
@@ -32,7 +69,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "DSHOP.PL.Controllers.CategoriesController",
+    "ContainingType": "DSHOP.PL.Areas.User.CategoriesController",
     "Method": "Index",
     "RelativePath": "api/Categories",
     "HttpMethod": "GET",
@@ -40,42 +77,5 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "DSHOP.PL.Controllers.CategoriesController",
-    "Method": "Create",
-    "RelativePath": "api/Categories",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "DSHOP.DAL.DTO.Request.CategoryRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "DSHOP.PL.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[DSHOP.PL.WeatherForecast, DSHOP.PL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

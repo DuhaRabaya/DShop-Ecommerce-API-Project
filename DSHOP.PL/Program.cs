@@ -6,6 +6,7 @@ using DSHOP.DAL.Repository;
 using DSHOP.DAL.Utils;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -35,7 +36,18 @@ namespace DSHOP.PL
             builder.Services.AddLocalization(options => options.ResourcesPath = "");
 
 
-            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequiredLength = 6;
+                options.User.RequireUniqueEmail = true;
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                options.SignIn.RequireConfirmedEmail = true;
+            })
                 .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
             const string defaultCulture = "en";
@@ -112,9 +124,11 @@ namespace DSHOP.PL
                 }
             },
             new string[] {}
-        }
-    });
+            }
             });
+            });
+
+            builder.Services.AddTransient<IEmailSender, EmailSender>();
             var app = builder.Build();
 
             //Configure the HTTP request pipeline.
