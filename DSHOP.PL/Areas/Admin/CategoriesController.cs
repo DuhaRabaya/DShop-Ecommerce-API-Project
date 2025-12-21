@@ -10,7 +10,7 @@ namespace DSHOP.PL.Areas.Admin
 {
     [Route("api/admin/[controller]")]
     [ApiController]
-    [Authorize(Roles ="Admin")]
+    [Authorize(Roles = "Admin")]
     public class CategoriesController : ControllerBase
     {
         private readonly ICategoryService _categoryService;
@@ -22,10 +22,43 @@ namespace DSHOP.PL.Areas.Admin
             _localizer = localizer;
         }
         [HttpPost("")]
-        public IActionResult create(CategoryRequest request)
+        public async Task<IActionResult> CreateCategory([FromBody] CategoryRequest request)
         {
-            var response = _categoryService.Create(request);
+            var response = await _categoryService.CreateAsync(request);
             return Ok(new { message = _localizer["Success"].Value });
+        }
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> UpdateCategory([FromRoute] int id, [FromBody] CategoryRequest request)
+        {
+            var result = await _categoryService.UpdateCategoryAsync(id, request);
+            if (!result.Success)
+            {
+                if (result.Message.Contains("not found")) return NotFound(result);
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteCategory([FromRoute] int id) {
+            var result = await _categoryService.DeleteCategoryAsync(id);
+
+            if (!result.Success) {
+                if (result.Message.Contains("not found")) return NotFound(result);
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
+
+        [HttpPatch("toggle-status/{id}")]
+        public async Task<IActionResult> ToggleStatus(int id)
+        {
+            var result = await _categoryService.ToggleStatus(id);
+            if (!result.Success)
+            {
+                if (result.Message.Contains("not found")) return NotFound(result);
+                return BadRequest(result);
+            }
+            return Ok(result);
         }
     }
 }

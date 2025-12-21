@@ -19,17 +19,31 @@ namespace DSHOP.DAL.Repository
             _context = context;
         }
 
-        public Category Create(Category request)
+        public async Task<Category> CreateAsync(Category request)
         {
-            _context.Categories.Add(request);
-            _context.SaveChanges();
+            await _context.Categories.AddAsync(request);
+            await _context.SaveChangesAsync();
             return request;
 
         }
 
-        public List<Category> GetAll()
+        public async Task<List<Category>> GetAllAsync()
         {
-            return _context.Categories.Include(c => c.Translations).ToList();
+            return await _context.Categories.Include(c => c.Translations).ToListAsync();
+        }
+        public async Task<Category?> FindByIdAsync(int id)
+        {
+            return await _context.Categories.Include(c=>c.Translations).FirstOrDefaultAsync(c=>c.Id==id);
+        }
+        public async Task DeleteAsync(Category cat) { 
+            _context.Categories.Remove(cat);
+            await _context.SaveChangesAsync();
+        }
+        public async Task<Category?> UpdateAsync(Category cat)
+        {
+            _context.Categories.Update(cat);
+            await _context.SaveChangesAsync();
+            return cat;
         }
     } 
 }

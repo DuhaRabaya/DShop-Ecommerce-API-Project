@@ -242,5 +242,7 @@ namespace DSHOP.BLL.Service
                 Message = "password updated successfully"
             };
         }
+
+      
     }
 }

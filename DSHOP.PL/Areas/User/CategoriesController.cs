@@ -22,9 +22,9 @@ namespace DSHOP.PL.Areas.User
             _localizer = localizer;
         }
         [HttpGet("")]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var cats = _categoryService.GetAll();
+            var cats =await _categoryService.GetAllAsync();
             return Ok(new { Message = _localizer["Success"].Value, cats });
         }
         

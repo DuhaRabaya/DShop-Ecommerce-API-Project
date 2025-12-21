@@ -11,7 +11,10 @@ namespace DSHOP.BLL.Service
 {
     public interface ICategoryService
     {
-        List<CategoryResponse> GetAll();
-        CategoryResponse Create(CategoryRequest request);
+        Task<List<CategoryResponse>> GetAllAsync();
+        Task<CategoryResponse> CreateAsync(CategoryRequest request);
+        Task<BaseResponse> DeleteCategoryAsync(int id);
+        Task<BaseResponse> UpdateCategoryAsync(int id, CategoryRequest request);
+        Task<BaseResponse> ToggleStatus(int id);
     }
 }
