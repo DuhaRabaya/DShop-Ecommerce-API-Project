@@ -17,6 +17,16 @@
   },
   {
     "ContainingType": "DSHOP.PL.Areas.Admin.CategoriesController",
+    "Method": "Index",
+    "RelativePath": "api/admin/Categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DSHOP.PL.Areas.Admin.CategoriesController",
     "Method": "UpdateCategory",
     "RelativePath": "api/admin/Categories/{id}",
     "HttpMethod": "PATCH",
@@ -160,7 +170,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "lang",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   }
 ]

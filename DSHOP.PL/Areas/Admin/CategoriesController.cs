@@ -60,5 +60,12 @@ namespace DSHOP.PL.Areas.Admin
             }
             return Ok(result);
         }
+
+        [HttpGet("")]
+        public async Task<IActionResult> Index()
+        {
+            var cats = await _categoryService.GetAllAsyncForAdmin();
+            return Ok(new { Message = _localizer["Success"].Value, cats });
+        }
     }
 }

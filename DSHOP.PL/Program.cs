@@ -1,4 +1,5 @@
 
+using DSHOP.BLL.MapsterConfigurations;
 using DSHOP.BLL.Service;
 using DSHOP.DAL.Data;
 using DSHOP.DAL.Models;
@@ -122,7 +123,7 @@ namespace DSHOP.PL
             });
 
             AppConfiguration.Config(builder.Services);
-
+            MapsterConfig.MapsterConfRegister();
             var app = builder.Build();
 
             //Configure the HTTP request pipeline.

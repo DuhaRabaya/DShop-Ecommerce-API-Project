@@ -3,6 +3,7 @@ using DSHOP.DAL.DTO.Response;
 using DSHOP.DAL.Models;
 using DSHOP.DAL.Repository;
 using Mapster;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,13 +27,22 @@ namespace DSHOP.BLL.Service
             return cat.Adapt<CategoryResponse>();
         }
 
-        public async Task<List<CategoryResponse>> GetAllAsync()
+        public async Task<List<CategoryResponse>> GetAllAsyncForAdmin()
         {
             var cats=await _categoryRepository.GetAllAsync();
+
             var response = cats.Adapt<List<CategoryResponse>>();
             return response;
 
         }
+        public async Task<List<CategoryUserResponse>> GetAllAsyncForUser([FromQuery] string lang = "en")
+        {
+            var cats = await _categoryRepository.GetAllAsync();
+            var response=cats.BuildAdapter().AddParameters("lang" ,lang).AdaptToType<List<CategoryUserResponse>>();
+            return response;
+
+        }
+
         public async Task<BaseResponse> DeleteCategoryAsync(int id)
         {
             try

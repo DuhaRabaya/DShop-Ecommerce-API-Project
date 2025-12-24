@@ -29,7 +29,7 @@ namespace DSHOP.DAL.Repository
 
         public async Task<List<Category>> GetAllAsync()
         {
-            return await _context.Categories.Include(c => c.Translations).ToListAsync();
+            return await _context.Categories.Include(c => c.User).Include(c => c.Translations).ToListAsync();
         }
         public async Task<Category?> FindByIdAsync(int id)
         {
