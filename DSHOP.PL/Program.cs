@@ -133,7 +133,7 @@ namespace DSHOP.PL
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseRequestLocalization();
 

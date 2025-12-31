@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using DSHOP.DAL.Models;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,8 @@ namespace DSHOP.DAL.DTO.Request
 {
     public class ProductRequest
     {
-        List<ProductTranslationsRequest> translations { get; set; }
+        public List<ProductTranslationsRequest> Translations { get; set; }
+        public List<IFormFile> SubImages { get; set; }
         public decimal Price { get; set; }
         public int Quantity { get; set; }
         public decimal Discount { get; set; }

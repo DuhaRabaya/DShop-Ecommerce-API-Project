@@ -14,7 +14,8 @@ namespace DSHOP.DAL.DTO.Response
         [JsonConverter(typeof(JsonStringEnumConverter))]
         public Status Status { get; set; }
         public string CreatedBy { get; set; }
-        public string Mainimage { get; set; }
+        public string MainImage { get; set; }
         public List<ProductTranslationsResponse> Translations { get; set; }
+        
     }
 }

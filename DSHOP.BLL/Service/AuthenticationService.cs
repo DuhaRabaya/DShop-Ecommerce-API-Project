@@ -115,8 +115,10 @@ namespace DSHOP.BLL.Service
                 await _userManager.AddToRoleAsync(user, "User");
                 var token= await _userManager.GenerateEmailConfirmationTokenAsync(user); 
                 token=Uri.EscapeDataString(token);
+
                 var email = $"http://localhost:5051/api/auth/Account/ConfirmEmail?token={token}&userId={user.Id}";
-                await _emailSender.SendEmailAsync(user.Email, "welcome", $"<h1>Welcom .. {user.FullName}</h1> <br> <a href='{email}'>Confirm Email</a>");
+                await _emailSender.SendEmailAsync(user.Email, "welcome", 
+                    $"<h1>Welcom .. {user.FullName}</h1> <br> <a href='{email}'>Confirm Email</a>");
                 return new RegisterResponse()
                 {
                     Success = true,

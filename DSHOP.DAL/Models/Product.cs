@@ -17,5 +17,6 @@ namespace DSHOP.DAL.Models
         public Category Category {  get; set; }
 
         public List<ProductTranslations> Translations { get; set; } 
+        public List<ProductImage> SubImages { get; set; }
     }
 }
