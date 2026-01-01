@@ -14,5 +14,7 @@ namespace DSHOP.DAL.Models
         public string? Street { get; set; }
         public string? PasswordResetCode { get; set; }
         public DateTime? PasswordResetCodeExpired { get; set; }
+        public string? RefreshToken { get; set; }
+        public DateTime RefreshTokenExpiryTime { get; set; }
     }
 }

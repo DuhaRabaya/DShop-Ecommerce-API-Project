@@ -23,6 +23,8 @@ namespace DSHOP.PL
 
             services.AddScoped<IAuthenticationService, AuthenticationService>();
             services.AddTransient<IEmailSender, EmailSender>();
+
+            services.AddScoped<ITokenService,TokenService>();
         }
     }
 }

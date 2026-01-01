@@ -15,5 +15,6 @@ namespace DSHOP.BLL.Service
         Task<bool> ConfirmEmailAsync(string token , string userId);
         Task<ResetPasswordResponse> RequestPasswordReset(ResetPasswordRequest request);
         Task<UpdatePasswordResponse> RequestPasswordUpdate(UpdatePasswordRequest request);
+        Task<LoginResponse> RefreshTokenAsync(TokenApiModel request);
     }
 }
