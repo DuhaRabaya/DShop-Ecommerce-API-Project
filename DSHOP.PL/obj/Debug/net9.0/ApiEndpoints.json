@@ -241,6 +241,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "DSHOP.PL.Areas.User.CartsController",
+    "Method": "AddToCart",
+    "RelativePath": "api/Carts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSHOP.DAL.DTO.Request.AddToCartRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DSHOP.PL.Areas.User.CategoriesController",
     "Method": "Index",
     "RelativePath": "api/Categories",

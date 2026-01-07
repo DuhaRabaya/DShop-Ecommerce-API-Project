@@ -1,0 +1,33 @@
+﻿using DSHOP.BLL.Service;
+using DSHOP.DAL.DTO.Request;
+using DSHOP.PL.Resources;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
+using System.Security.Claims;
+
+namespace DSHOP.PL.Areas.User
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    [Authorize]
+    public class CartsController : ControllerBase
+    {
+        private readonly ICartService _cartService;
+        private readonly IStringLocalizer<SharedResource> _localizer;
+
+        public CartsController(ICartService cartService, IStringLocalizer<SharedResource> localizer)
+        {
+            _cartService = cartService;
+            _localizer = localizer;
+        }
+        [HttpPost("")]
+        public async Task<IActionResult> AddToCart([FromBody] AddToCartRequest request)
+        {
+            var user=User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var result=await _cartService.AddToCartAsync(user, request);
+            return Ok(result);
+        }
+    }
+}

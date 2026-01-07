@@ -24,6 +24,9 @@ namespace DSHOP.PL
             services.AddScoped<IAuthenticationService, AuthenticationService>();
             services.AddTransient<IEmailSender, EmailSender>();
 
+            services.AddScoped<ICartService, CartService>();
+            services.AddTransient<ICartRepository, CartRepository>();
+
             services.AddScoped<ITokenService,TokenService>();
         }
     }

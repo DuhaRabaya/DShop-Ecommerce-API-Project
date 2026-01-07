@@ -41,7 +41,7 @@ namespace DSHOP.BLL.Service
                 issuer: _configuration["Jwt:Issuer"],
                 audience: _configuration["Jwt:Audience"],
                 claims: userClaims,
-                expires: DateTime.UtcNow.AddMinutes(1),
+                expires: DateTime.UtcNow.AddMinutes(20),
                 signingCredentials: creds);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
