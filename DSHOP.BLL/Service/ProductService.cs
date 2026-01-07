@@ -3,6 +3,7 @@ using DSHOP.DAL.DTO.Response;
 using DSHOP.DAL.Models;
 using DSHOP.DAL.Repository;
 using Mapster;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,6 +47,22 @@ namespace DSHOP.BLL.Service
         {
             var products = await _productRepository.GetAllAsync();
             var response=products.Adapt<List<ProductResponse>>();
+            return response;
+        }
+
+        public async Task<List<ProductUserResponse>> GetAllAsyncForUser([FromQuery] string lang = "en")
+        {
+            var products = await _productRepository.GetAllAsync();
+            var response = products.BuildAdapter().AddParameters("lang", lang).AdaptToType<List<ProductUserResponse>>();
+            return response;
+
+        }
+
+        public async Task<ProductUserDetails> GetProductDetailsForUser(int id, string lang = "en")
+        {
+            var product = await _productRepository.FindByIdAsync(id);
+           var response = product.BuildAdapter().AddParameters("lang", lang).AdaptToType<ProductUserDetails>();
+
             return response;
         }
     }
