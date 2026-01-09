@@ -29,5 +29,19 @@ namespace DSHOP.PL.Areas.User
             var result=await _cartService.AddToCartAsync(user, request);
             return Ok(result);
         }
-    }
+        [HttpGet("")]
+        public async Task<IActionResult> Index([FromQuery]string lang="en")
+        {
+            var user = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var result = await _cartService.getItems(user ,lang);
+            return Ok(result);
+        }
+        [HttpDelete("")]
+        public async Task<IActionResult> clearCart()
+        {
+            var user = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var result = await _cartService.clearCart(user);
+            return Ok(result);
+        }
+    } 
 }

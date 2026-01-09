@@ -39,14 +39,60 @@ namespace DSHOP.BLL.Service
                     Message = "not enough product!"
                 };
             }
-            var cart = request.Adapt<Cart>();
-            cart.UserId = userId;
-            await _cartRepository.AddAsync(cart);
+            var item=await _cartRepository.getItem(userId, request.ProductId);
 
+            if (item is not null) {
+                if (product.Quantity<(item.Count + request.Count)) {
+                    return new BaseResponse()
+                    {
+                        Success = false,
+                        Message = "not enough product!"
+                    };
+                }
+                item.Count += request.Count;
+                await _cartRepository.updateAsync(item);
+            }
+            else
+            {
+                var cart = request.Adapt<Cart>();
+                cart.UserId = userId;
+                await _cartRepository.AddAsync(cart);
+            }
             return new BaseResponse()
             {
                 Success = true,
                 Message = "product added successfully"
+            };
+        }
+
+        public async Task<CartSummaryResponse> getItems(string userId, string lang = "en")
+        {
+            var items=await _cartRepository.getItems(userId);
+
+            var response = items.Select(c => new CartResponse
+            {
+                ProductId = c.ProductId,
+                ProductName = c.Product.Translations.FirstOrDefault(t=>t.Language==lang).Name,
+                Count = c.Count,
+                Price=c.Product.Price
+            }).ToList();
+
+            return new CartSummaryResponse
+            {
+                Items = response,
+
+            };
+
+        }
+
+        public async Task<BaseResponse> clearCart(string userId)
+        {
+            await _cartRepository.clearCart(userId);
+
+            return new BaseResponse()
+            {
+                Success = true,
+                Message = "Cart cleared"
             };
         }
     }

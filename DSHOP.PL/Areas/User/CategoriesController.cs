@@ -27,6 +27,8 @@ namespace DSHOP.PL.Areas.User
             var cats =await _categoryService.GetAllAsyncForUser(lang);
             return Ok(new { Message = _localizer["Success"].Value, cats });
         }
+      
+   
         
     }
 }

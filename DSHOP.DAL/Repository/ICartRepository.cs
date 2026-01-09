@@ -12,5 +12,9 @@ namespace DSHOP.DAL.Repository
     public interface ICartRepository
     {
         Task<Cart> AddAsync(Cart request);
+        Task<List<Cart>> getItems(string userId);
+        Task<Cart?> getItem(string userId , int productId);
+        Task<Cart> updateAsync(Cart cart);
+        Task clearCart(string userId);
     }
 }

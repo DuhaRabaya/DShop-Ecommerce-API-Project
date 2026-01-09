@@ -11,5 +11,7 @@ namespace DSHOP.BLL.Service
     public interface ICartService
     {
         Task<BaseResponse> AddToCartAsync(string userId,AddToCartRequest request);
+        Task<CartSummaryResponse> getItems(string userId, string lang = "en");
+        Task<BaseResponse> clearCart(string userId);
     }
 }

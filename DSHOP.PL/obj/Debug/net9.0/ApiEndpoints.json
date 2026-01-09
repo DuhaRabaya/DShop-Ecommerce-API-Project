@@ -257,6 +257,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "DSHOP.PL.Areas.User.CartsController",
+    "Method": "Index",
+    "RelativePath": "api/Carts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lang",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DSHOP.PL.Areas.User.CartsController",
+    "Method": "clearCart",
+    "RelativePath": "api/Carts",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DSHOP.PL.Areas.User.CategoriesController",
     "Method": "Index",
     "RelativePath": "api/Categories",
