@@ -147,7 +147,6 @@ C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.PL\obj\Debug\net9.0\DSHOP.PL.A
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.PL\obj\Debug\net9.0\DSHOP.PL.csproj.CoreCompileInputs.cache
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.PL\obj\Debug\net9.0\DSHOP.PL.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.PL\obj\Debug\net9.0\DSHOP.PL.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.PL\obj\Debug\net9.0\DSHOP.PL.sourcelink.json
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.PL\obj\Debug\net9.0\ar\DSHOP.PL.resources.dll
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.PL\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.PL\obj\Debug\net9.0\rjsmrazor.dswa.cache.json

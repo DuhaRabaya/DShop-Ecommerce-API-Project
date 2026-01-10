@@ -8,7 +8,6 @@ C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.AssemblyInfoInputs.cache
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.AssemblyInfo.cs
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.csproj.CoreCompileInputs.cache
-C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.sourcelink.json
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.csproj.Up2Date
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.dll
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\refint\DSHOP.BLL.dll
