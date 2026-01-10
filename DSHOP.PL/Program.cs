@@ -1,4 +1,5 @@
 
+using DSHOP.BLL;
 using DSHOP.BLL.MapsterConfigurations;
 using DSHOP.BLL.Service;
 using DSHOP.DAL.Data;
@@ -11,6 +12,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Stripe;
 using System.Data;
 using System.Globalization;
 using System.Text;
@@ -36,6 +38,8 @@ namespace DSHOP.PL
 
             builder.Services.AddLocalization(options => options.ResourcesPath = "");
 
+            builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
+            StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {

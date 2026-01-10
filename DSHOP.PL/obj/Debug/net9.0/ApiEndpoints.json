@@ -299,6 +299,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "DSHOP.PL.Areas.User.CheckoutController",
+    "Method": "Payment",
+    "RelativePath": "api/Checkout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSHOP.DAL.DTO.Request.CheckoutRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DSHOP.PL.Areas.User.ProductsController",
     "Method": "Index",
     "RelativePath": "api/Products",
