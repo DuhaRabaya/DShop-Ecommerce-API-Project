@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.pl\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|solutionrelative:dshop.pl\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|solutionrelative:dshop.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.bll\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|solutionrelative:dshop.bll\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.bll\\service\\checkoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|solutionrelative:dshop.bll\\service\\checkoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.pl\\appconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|solutionrelative:dshop.pl\\appconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|solutionrelative:dshop.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.bll\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|solutionrelative:dshop.bll\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.bll\\service\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,11 +62,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "DSHOP.PL\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\appsettings.Development.json",
+              "RelativeToolTip": "DSHOP.PL\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-10T19:53:15.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CheckoutController.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Areas\\User\\CheckoutController.cs",
               "RelativeDocumentMoniker": "DSHOP.PL\\Areas\\User\\CheckoutController.cs",
@@ -70,12 +87,11 @@
               "RelativeToolTip": "DSHOP.PL\\Areas\\User\\CheckoutController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-10T19:20:00.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-10T19:20:00.334Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "AppConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\AppConfiguration.cs",
               "RelativeDocumentMoniker": "DSHOP.PL\\AppConfiguration.cs",
@@ -83,12 +99,11 @@
               "RelativeToolTip": "DSHOP.PL\\AppConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-10T19:18:25.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-10T19:18:25.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CheckoutResponse.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\DTO\\Response\\CheckoutResponse.cs",
               "RelativeDocumentMoniker": "DSHOP.DAL\\DTO\\Response\\CheckoutResponse.cs",
@@ -96,25 +111,24 @@
               "RelativeToolTip": "DSHOP.DAL\\DTO\\Response\\CheckoutResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-10T18:59:54.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-10T18:59:54.887Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CheckoutService.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\CheckoutService.cs",
               "RelativeDocumentMoniker": "DSHOP.BLL\\Service\\CheckoutService.cs",
               "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\CheckoutService.cs",
               "RelativeToolTip": "DSHOP.BLL\\Service\\CheckoutService.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAYwE8AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-10T18:57:02.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ICheckoutService.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\ICheckoutService.cs",
               "RelativeDocumentMoniker": "DSHOP.BLL\\Service\\ICheckoutService.cs",
@@ -122,38 +136,37 @@
               "RelativeToolTip": "DSHOP.BLL\\Service\\ICheckoutService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-10T18:52:57.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-10T18:52:57.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Program.cs",
               "RelativeDocumentMoniker": "DSHOP.PL\\Program.cs",
               "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Program.cs",
               "RelativeToolTip": "DSHOP.PL\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAzwCoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-10T18:44:20.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "StripeSettings.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\StripeSettings.cs",
               "RelativeDocumentMoniker": "DSHOP.BLL\\StripeSettings.cs",
               "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\StripeSettings.cs",
               "RelativeToolTip": "DSHOP.BLL\\StripeSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-10T18:43:28.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "CartsController.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Areas\\User\\CartsController.cs",
               "RelativeDocumentMoniker": "DSHOP.PL\\Areas\\User\\CartsController.cs",
@@ -161,12 +174,11 @@
               "RelativeToolTip": "DSHOP.PL\\Areas\\User\\CartsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-09T21:01:47.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-09T21:01:47.705Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ICartRepository.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Repository\\ICartRepository.cs",
               "RelativeDocumentMoniker": "DSHOP.DAL\\Repository\\ICartRepository.cs",
@@ -174,12 +186,11 @@
               "RelativeToolTip": "DSHOP.DAL\\Repository\\ICartRepository.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-09T20:56:28.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-09T20:56:28.569Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "CartService.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\CartService.cs",
               "RelativeDocumentMoniker": "DSHOP.BLL\\Service\\CartService.cs",
@@ -187,12 +198,11 @@
               "RelativeToolTip": "DSHOP.BLL\\Service\\CartService.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAFcAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T16:13:17.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T16:13:17.985Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\CategoryService.cs",
               "RelativeDocumentMoniker": "DSHOP.BLL\\Service\\CategoryService.cs",
@@ -200,12 +210,11 @@
               "RelativeToolTip": "DSHOP.BLL\\Service\\CategoryService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T16:11:52.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T16:11:52.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ICartService.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\ICartService.cs",
               "RelativeDocumentMoniker": "DSHOP.BLL\\Service\\ICartService.cs",
@@ -213,8 +222,7 @@
               "RelativeToolTip": "DSHOP.BLL\\Service\\ICartService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T16:09:52.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T16:09:52.626Z"
             }
           ]
         }
