@@ -13,3 +13,4 @@ C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\refint\DSHOP.BLL.dll
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.pdb
 C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\ref\DSHOP.BLL.dll
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.BLL\obj\Debug\net9.0\DSHOP.BLL.sourcelink.json

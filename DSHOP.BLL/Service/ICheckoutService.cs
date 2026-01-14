@@ -11,5 +11,6 @@ namespace DSHOP.BLL.Service
     public interface ICheckoutService
     {
         Task<CheckoutResponse> PaymentProcess(CheckoutRequest request, string UserId);
+        Task<CheckoutResponse> HandleSuccess(string sessionId);
     }
 }

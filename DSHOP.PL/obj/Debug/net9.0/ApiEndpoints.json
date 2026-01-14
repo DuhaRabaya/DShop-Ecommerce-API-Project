@@ -315,6 +315,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "DSHOP.PL.Areas.User.CheckoutController",
+    "Method": "Success",
+    "RelativePath": "api/Checkout/success",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "session_id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DSHOP.PL.Areas.User.ProductsController",
     "Method": "Index",
     "RelativePath": "api/Products",
