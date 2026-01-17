@@ -11,7 +11,7 @@ namespace DSHOP.BLL.Service
     {
         Task<ProductResponse> CreateProductAsync(ProductRequest request);
         Task<List<ProductResponse>> GetAllAsyncForAdmin();
-        Task<List<ProductUserResponse>> GetAllAsyncForUser([FromQuery] string lang = "en", int page = 1, int limit = 1);
+        Task<List<ProductUserResponse>> GetAllAsyncForUser([FromQuery] string lang = "en", int page = 1, int limit = 1 , string? search=null);
         Task<ProductUserDetails> GetProductDetailsForUser(int id, string lang = "en");
     }
 }

@@ -20,9 +20,10 @@ namespace DSHOP.PL.Areas.User
                 _localizer = localizer;
             }
             [HttpGet("")]
-            public async Task<IActionResult> Index([FromQuery] string lang = "en" , [FromQuery]int page=1, [FromQuery] int limit=1)
+            public async Task<IActionResult> Index([FromQuery] string lang = "en" , [FromQuery]int page=1,
+                [FromQuery] int limit=1, [FromQuery] string? search=null)
             {
-                var products = await _productService.GetAllAsyncForUser(lang ,page ,limit);
+                var products = await _productService.GetAllAsyncForUser(lang ,page ,limit,search);
                 return Ok(new { Message = _localizer["Success"].Value, products });
             }
         [HttpGet("{id}")]

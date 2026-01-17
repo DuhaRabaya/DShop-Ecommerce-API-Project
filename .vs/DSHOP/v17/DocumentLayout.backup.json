@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "DSHOP.BLL\\Service\\IProductService.cs",
               "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\IProductService.cs",
               "RelativeToolTip": "DSHOP.BLL\\Service\\IProductService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAB2AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-17T17:36:41.438Z",
               "EditorCaption": ""
@@ -63,9 +63,9 @@
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Areas\\User\\ProductsController.cs",
               "RelativeDocumentMoniker": "DSHOP.PL\\Areas\\User\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Areas\\User\\ProductsController.cs*",
-              "RelativeToolTip": "DSHOP.PL\\Areas\\User\\ProductsController.cs*",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwBgAAABbAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Areas\\User\\ProductsController.cs",
+              "RelativeToolTip": "DSHOP.PL\\Areas\\User\\ProductsController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwBsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-17T17:35:40.463Z",
               "EditorCaption": ""
@@ -78,7 +78,7 @@
               "RelativeDocumentMoniker": "DSHOP.BLL\\Service\\ProductService.cs",
               "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\ProductService.cs",
               "RelativeToolTip": "DSHOP.BLL\\Service\\ProductService.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAYwDkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAmwDwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-17T17:29:42.851Z",
               "EditorCaption": ""
@@ -93,8 +93,7 @@
               "RelativeToolTip": "DSHOP.DAL\\Repository\\ProductRepository.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAmwDQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T17:02:42.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-17T17:02:42.358Z"
             },
             {
               "$type": "Document",
@@ -106,8 +105,7 @@
               "RelativeToolTip": "DSHOP.DAL\\Repository\\IProductRepository.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T17:01:54.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-17T17:01:54.91Z"
             },
             {
               "$type": "Document",
@@ -119,8 +117,7 @@
               "RelativeToolTip": "DSHOP.BLL\\Service\\CheckoutService.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAUwIUAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T16:45:52.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-17T16:45:52.778Z"
             },
             {
               "$type": "Document",
@@ -132,8 +129,7 @@
               "RelativeToolTip": "DSHOP.DAL\\Repository\\OrderItemRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T16:43:08.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-17T16:43:08.559Z"
             },
             {
               "$type": "Document",
@@ -145,8 +141,7 @@
               "RelativeToolTip": "DSHOP.DAL\\Repository\\IOrderItemRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T16:42:39.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-17T16:42:39.655Z"
             }
           ]
         }

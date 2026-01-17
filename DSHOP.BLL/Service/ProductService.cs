@@ -51,9 +51,13 @@ namespace DSHOP.BLL.Service
             return response;
         }
 
-        public async Task<List<ProductUserResponse>> GetAllAsyncForUser([FromQuery] string lang = "en" , int page=1 , int limit=1)
+        public async Task<List<ProductUserResponse>> GetAllAsyncForUser([FromQuery] string lang = "en" , int page=1 , int limit=1 ,string? search=null)
         {
             var query = _productRepository.Query();
+            if(search is not null)
+            {
+                query = query.Where(p=>p.Translations.Any(t => t.Language == lang && t.Name.Contains(search) || t.Description.Contains(search)));
+            }
             var total= await query.CountAsync();
 
              query= query.Skip((page-1)*limit).Take(limit);
