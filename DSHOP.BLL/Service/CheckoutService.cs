@@ -19,14 +19,19 @@ namespace DSHOP.BLL.Service
         private readonly IOrderRepository _orderRepository;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IEmailSender _emailSender;
+        private readonly IOrderItemRepository _orderItemRepository;
+        private readonly IProductRepository _productRepository;
 
         public CheckoutService(ICartRepository cartRepository , IOrderRepository orderRepository ,
-            UserManager<ApplicationUser> userManager , IEmailSender emailSender)
+            UserManager<ApplicationUser> userManager , IEmailSender emailSender , IOrderItemRepository orderItemRepository,
+            IProductRepository productRepository)
         {
             _cartRepository = cartRepository;
             _orderRepository = orderRepository;
             _userManager = userManager;
             _emailSender = emailSender;
+            _orderItemRepository = orderItemRepository;
+            _productRepository = productRepository;
         }
         public async Task<CheckoutResponse> PaymentProcess(CheckoutRequest request, string UserId)
         {
@@ -138,6 +143,27 @@ namespace DSHOP.BLL.Service
             await _orderRepository.UpdateAsync(order);
 
             var user =await  _userManager.FindByIdAsync(userId);
+
+            var cartItems= await _cartRepository.getItems(userId);
+            var orderItems= new List<OrderItem>();
+            var productsDecrease= new List<(int productId , int quantity)>();
+            foreach(var item in cartItems)
+            {
+                var orderItem = new OrderItem()
+                {
+                    OrderId= order.Id,
+                    ProductId= item.ProductId,
+                    UnitPrice=item.Product.Price,
+                    Quantity= item.Count,
+                    TotalPrice=item.Product.Price*item.Count,
+                };
+                orderItems.Add(orderItem);
+                productsDecrease.Add((item.ProductId , item.Count));
+            }
+            await _orderItemRepository.AddAsync(orderItems);
+            await _cartRepository.clearCart(userId);
+            await _productRepository.DecreaseQuantities(productsDecrease);
+
             await _emailSender.SendEmailAsync(user.Email, "Successfull payment", "<h1>payment process completed successfully</h1>");
 
             return new CheckoutResponse

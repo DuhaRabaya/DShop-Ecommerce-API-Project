@@ -4,6 +4,7 @@ using DSHOP.DAL.Models;
 using DSHOP.DAL.Repository;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,10 +51,14 @@ namespace DSHOP.BLL.Service
             return response;
         }
 
-        public async Task<List<ProductUserResponse>> GetAllAsyncForUser([FromQuery] string lang = "en")
+        public async Task<List<ProductUserResponse>> GetAllAsyncForUser([FromQuery] string lang = "en" , int page=1 , int limit=1)
         {
-            var products = await _productRepository.GetAllAsync();
-            var response = products.BuildAdapter().AddParameters("lang", lang).AdaptToType<List<ProductUserResponse>>();
+            var query = _productRepository.Query();
+            var total= await query.CountAsync();
+
+             query= query.Skip((page-1)*limit).Take(limit);
+
+            var response = query.BuildAdapter().AddParameters("lang", lang).AdaptToType<List<ProductUserResponse>>();
             return response;
 
         }
