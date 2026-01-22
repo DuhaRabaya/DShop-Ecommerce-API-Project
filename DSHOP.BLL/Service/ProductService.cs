@@ -51,19 +51,56 @@ namespace DSHOP.BLL.Service
             return response;
         }
 
-        public async Task<List<ProductUserResponse>> GetAllAsyncForUser([FromQuery] string lang = "en" , int page=1 , int limit=1 ,string? search=null)
+        public async Task<PaginateResponse<ProductUserResponse>> GetAllAsyncForUser(string lang = "en" ,
+            int page=1 , int limit=1 ,string? search=null,
+            int? categoryId=null, decimal? minPrice=null, decimal? maxPrice=null,
+            string? sortBy=null , bool asc=true)
         {
             var query = _productRepository.Query();
             if(search is not null)
             {
-                query = query.Where(p=>p.Translations.Any(t => t.Language == lang && t.Name.Contains(search) || t.Description.Contains(search)));
+                query = query.Where(p=>p.Translations.Any(t => t.Language == lang && (t.Name.Contains(search) || t.Description.Contains(search))));
+            }
+            if(categoryId is not null)
+            {
+                query= query.Where(p=>p.CategoryId==categoryId);
+            }
+            if(minPrice is not null)
+            {
+                query=query.Where(p=>p.Price>=minPrice);
+            }
+            if (maxPrice is not null)
+            {
+                query = query.Where(p => p.Price <= minPrice);
+            }
+            if(sortBy is not null)
+            {
+                sortBy = sortBy.ToLower();
+
+                if (sortBy == "price")
+                {
+                    query= asc ? query.OrderBy(p=>p.Price) : query.OrderByDescending(p=>p.Price);
+                }else if(sortBy == "name")
+                {
+                    query = asc ? query.OrderBy(p => p.Translations.FirstOrDefault(p => p.Language == lang).Name)
+                        : query.OrderByDescending(p => p.Translations.FirstOrDefault(p => p.Language == lang).Name);
+                }else if (sortBy == "rate")
+                {
+                    query=asc? query.OrderBy(P=>P.Rate) : query.OrderByDescending(P=>P.Rate);
+                }
             }
             var total= await query.CountAsync();
 
              query= query.Skip((page-1)*limit).Take(limit);
 
             var response = query.BuildAdapter().AddParameters("lang", lang).AdaptToType<List<ProductUserResponse>>();
-            return response;
+            return new PaginateResponse<ProductUserResponse>
+            {
+                Total = total,
+                Page = page,    
+                Limit = limit,
+                Data=response
+            };
 
         }
 

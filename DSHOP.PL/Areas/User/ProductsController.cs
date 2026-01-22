@@ -21,9 +21,11 @@ namespace DSHOP.PL.Areas.User
             }
             [HttpGet("")]
             public async Task<IActionResult> Index([FromQuery] string lang = "en" , [FromQuery]int page=1,
-                [FromQuery] int limit=1, [FromQuery] string? search=null)
+                [FromQuery] int limit=5, [FromQuery] string? search=null , [FromQuery] int? categoryId=null 
+                , [FromQuery] decimal? minPrice=null , [FromQuery] decimal? maxPrice=null,
+                [FromQuery] string? sortBy = null, [FromQuery] bool asc = true)
             {
-                var products = await _productService.GetAllAsyncForUser(lang ,page ,limit,search);
+                var products = await _productService.GetAllAsyncForUser(lang ,page ,limit,search,categoryId,minPrice,maxPrice,sortBy,asc);
                 return Ok(new { Message = _localizer["Success"].Value, products });
             }
         [HttpGet("{id}")]
