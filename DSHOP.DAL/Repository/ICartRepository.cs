@@ -16,5 +16,6 @@ namespace DSHOP.DAL.Repository
         Task<Cart?> getItem(string userId , int productId);
         Task<Cart> updateAsync(Cart cart);
         Task clearCart(string userId);
+        Task DeleteAsync(Cart cart);
     }
 }

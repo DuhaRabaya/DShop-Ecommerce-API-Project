@@ -43,5 +43,24 @@ namespace DSHOP.PL.Areas.User
             var result = await _cartService.clearCart(user);
             return Ok(result);
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteItem(int id)
+        {
+            var user = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var result= await _cartService.RemoveFromCart(user,id);
+            return Ok(result);
+        }
+
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> UpdateQuantity([FromRoute] int id,[FromBody]UpdateQuantityRequest request)
+        {
+            var user = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var result = await _cartService.UpdateQuantity(user, id ,request.Count);
+            if(!result.Success) return BadRequest(result);
+            return Ok(result);
+        }
+
+
     } 
 }

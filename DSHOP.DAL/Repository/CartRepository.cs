@@ -52,5 +52,11 @@ namespace DSHOP.DAL.Repository
             await _context.SaveChangesAsync();
 
         }
+
+        public async Task DeleteAsync(Cart cart)
+        {
+            _context.Remove(cart);
+            await _context.SaveChangesAsync();
+        }
     }
 }
