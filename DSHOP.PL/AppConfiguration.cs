@@ -33,6 +33,8 @@ namespace DSHOP.PL
 
             services.AddScoped<ICheckoutService, CheckoutService>();
 
+            services.AddExceptionHandler<GlobalExceptionHandler>();
+            services.AddProblemDetails();
         }
     }
 }

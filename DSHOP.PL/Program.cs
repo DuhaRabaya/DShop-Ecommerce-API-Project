@@ -6,6 +6,7 @@ using DSHOP.DAL.Data;
 using DSHOP.DAL.Models;
 using DSHOP.DAL.Repository;
 using DSHOP.DAL.Utils;
+using DSHOP.PL.Middlewares;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
@@ -138,6 +139,14 @@ namespace DSHOP.PL
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            //old method for exception handling
+            //app.UseMiddleware<GlobalExceptionHandling>();
+
+            //new method for exception handling
+            app.UseExceptionHandler();
+
+
             app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseRequestLocalization();
