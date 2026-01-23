@@ -13,6 +13,10 @@ namespace DSHOP.DAL.Repository
         Task<Order> GetBySessionId(string sessionId);
         Task<Order> UpdateAsync(Order request);
 
+        Task<List<Order>> GetOrdersByStatus(OrderStatusEnum orderStatus);
+        Task<Order?> GetOrderById(int id);
+
+
 
     }
 }

@@ -38,6 +38,9 @@ namespace DSHOP.BLL.MapsterConfigurations
                 .Map(dest => dest.Description, source => source.Translations
                 .Where(t => t.Language == MapContext.Current.Parameters["lang"].ToString())
                 .Select(t => t.Name).FirstOrDefault());
+
+            TypeAdapterConfig<Order, OrderResponse>.NewConfig()
+               .Map(dest => dest.UserName, source => source.User.UserName);
         }
     }
 }

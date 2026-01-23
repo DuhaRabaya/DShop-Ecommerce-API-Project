@@ -43,7 +43,6 @@ namespace DSHOP.BLL.Service
                     Message = "cart is empty!"
                 };
             }
-
             decimal total = 0;
             foreach (var item in cartItems)
             {
@@ -62,7 +61,6 @@ namespace DSHOP.BLL.Service
                 UserId = UserId,
                 PaymentMethod = request.PaymentMethod,
                 AmountPaid =total,
-
              };
 
 
@@ -109,16 +107,18 @@ namespace DSHOP.BLL.Service
                 
                 var service = new SessionService();
                 var session = service.Create(options);
-                order.SessionId = session.Id;
-                await _orderRepository.CreateAsync(order);
 
+                order.SessionId = session.Id;
+                
+
+                await _orderRepository.CreateAsync(order);
+                
                 return new CheckoutResponse
                 {
                     Success = true,
                     Message = "payment session created",
                     Url=session.Url,
-                    PaymentId=session.PaymentIntentId
-                    
+                    PaymentId=session.PaymentIntentId                  
                 };
             }
             else
@@ -140,6 +140,8 @@ namespace DSHOP.BLL.Service
             
             order.PaymentId = session.PaymentIntentId;
             order.OrderStatus = OrderStatusEnum.Approved;
+            order.PaymentStatus = PaymentStatusEnum.Paid;
+
             await _orderRepository.UpdateAsync(order);
 
             var user =await  _userManager.FindByIdAsync(userId);
@@ -147,6 +149,7 @@ namespace DSHOP.BLL.Service
             var cartItems= await _cartRepository.getItems(userId);
             var orderItems= new List<OrderItem>();
             var productsDecrease= new List<(int productId , int quantity)>();
+
             foreach(var item in cartItems)
             {
                 var orderItem = new OrderItem()

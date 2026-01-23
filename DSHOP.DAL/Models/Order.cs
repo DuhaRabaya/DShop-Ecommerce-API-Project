@@ -20,6 +20,10 @@ namespace DSHOP.DAL.Models
     {
         Cash=1 , Visa=2
     }
+    public enum PaymentStatusEnum
+    {
+        UnPaid = 1, Paid = 2
+    }
     public class Order
     {
         public int Id { get; set; }
@@ -27,6 +31,7 @@ namespace DSHOP.DAL.Models
         public DateTime OrderDate { get; set; } = DateTime.UtcNow;
         public DateTime? ShippedDate { get; set; }
         public PaymentMethodEnum PaymentMethod { get; set; }
+        public PaymentStatusEnum PaymentStatus { get; set; } = PaymentStatusEnum.UnPaid;
         public string? SessionId { get; set; }
         public string? PaymentId { get; set; }
         public decimal? AmountPaid { get; set; }

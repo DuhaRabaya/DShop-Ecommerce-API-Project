@@ -30,7 +30,7 @@ namespace DSHOP.PL
             services.AddScoped<ITokenService,TokenService>();
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IOrderItemRepository, OrderItemRepository>();
-
+            services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<ICheckoutService, CheckoutService>();
 
             services.AddExceptionHandler<GlobalExceptionHandler>();

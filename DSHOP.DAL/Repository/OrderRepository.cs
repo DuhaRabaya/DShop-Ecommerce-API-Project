@@ -30,6 +30,20 @@ namespace DSHOP.DAL.Repository
             return await _context.Orders.FirstOrDefaultAsync(o => o.SessionId == sessionId);
         }
 
+        public async Task<Order?> GetOrderById(int id)
+        {
+            return await _context.Orders.
+                 Include(o=>o.User)
+                .Include(o=>o.Items)
+                .ThenInclude(o=>o.Product)
+                .FirstOrDefaultAsync(o=>o.Id==id);
+        }
+
+        public async Task<List<Order>> GetOrdersByStatus(OrderStatusEnum orderStatus)
+        {
+            return await _context.Orders.Where(o=>o.OrderStatus == orderStatus).Include(o=>o.User).ToListAsync();
+        }
+
         public async Task<Order> UpdateAsync(Order request)
         {
             _context.Orders.Update(request);

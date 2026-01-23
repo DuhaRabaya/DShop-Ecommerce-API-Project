@@ -79,6 +79,43 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "DSHOP.PL.Areas.Admin.OrdersController",
+    "Method": "GetOrders",
+    "RelativePath": "api/admin/Orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DSHOP.PL.Areas.Admin.OrdersController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/admin/Orders/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newStatus",
+        "Type": "DSHOP.DAL.DTO.Request.UpdateOrderStatusRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DSHOP.PL.Areas.Admin.ProductsController",
     "Method": "CreateProduct",
     "RelativePath": "api/admin/Products",
