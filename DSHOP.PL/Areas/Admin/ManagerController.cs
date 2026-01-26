@@ -51,8 +51,5 @@ namespace DSHOP.PL.Areas.Admin
             return Ok(response);
 
         }
-
-
-
     }
 }

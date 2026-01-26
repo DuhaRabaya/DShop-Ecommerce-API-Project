@@ -28,6 +28,9 @@ namespace DSHOP.PL
             services.AddTransient<ICartRepository, CartRepository>();
 
             services.AddScoped<IManageUserService, ManageUserService>();
+            services.AddScoped<IReviewRepository, ReviewRepository>();
+            services.AddScoped<IReviewService, ReviewService>();
+
 
             services.AddScoped<ITokenService,TokenService>();
             services.AddScoped<IOrderRepository, OrderRepository>();

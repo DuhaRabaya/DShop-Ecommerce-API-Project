@@ -15,8 +15,6 @@ namespace DSHOP.DAL.Repository
 
         Task<List<Order>> GetOrdersByStatus(OrderStatusEnum orderStatus);
         Task<Order?> GetOrderById(int id);
-
-
-
+        Task<bool> ProductIsDeliveredToUser(string userId, int productId);
     }
 }

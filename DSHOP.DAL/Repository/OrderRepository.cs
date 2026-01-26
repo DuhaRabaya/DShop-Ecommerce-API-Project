@@ -50,5 +50,11 @@ namespace DSHOP.DAL.Repository
             await _context.SaveChangesAsync();
             return request;
         }
+        public async Task<bool> ProductIsDeliveredToUser(string userId, int productId)
+        {
+            return await _context.Orders.Where(o => o.UserId == userId && o.OrderStatus == OrderStatusEnum.Delivered)
+                .SelectMany(o=>o.Items)
+                .AnyAsync(o=>o.ProductId == productId);         
+        }
     }
 }

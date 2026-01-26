@@ -554,5 +554,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DSHOP.PL.Areas.User.ProductsController",
+    "Method": "AddReview",
+    "RelativePath": "api/Products/review/{productId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSHOP.DAL.DTO.Request.ReviewRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
