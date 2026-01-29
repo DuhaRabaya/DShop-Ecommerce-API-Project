@@ -35,7 +35,7 @@ namespace DSHOP.DAL.Repository
                 .Include(c => c.SubImages).Include(c=>c.Reviews).ThenInclude(c=>c.User).
                 FirstOrDefaultAsync(c => c.Id == id);
         }
-
+ 
         public async Task<bool> DecreaseQuantities(List<(int ProductId , int Quantitiy)> items)
         {
             var productIds= items.Select(p => p.ProductId).ToList();

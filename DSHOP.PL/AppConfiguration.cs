@@ -1,8 +1,14 @@
 ﻿using DSHOP.BLL.Service;
+using DSHOP.DAL.DTO.Request;
 using DSHOP.DAL.Repository;
 using DSHOP.DAL.Utils;
+using DSHOP.DAL.Validations;
+using FluentValidation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Stripe;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 
 namespace DSHOP.PL
 {
@@ -14,9 +20,9 @@ namespace DSHOP.PL
             services.AddScoped<ICategoryService, CategoryService>();
 
             services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductService, BLL.Service.ProductService>();
 
-            services.AddScoped<IFileService, FileService>(); 
+            services.AddScoped<IFileService, BLL.Service.FileService>(); 
 
             services.AddScoped<ISeedData, RoleSeedData>();
             services.AddScoped<ISeedData, UserSeedData>();
@@ -29,14 +35,18 @@ namespace DSHOP.PL
 
             services.AddScoped<IManageUserService, ManageUserService>();
             services.AddScoped<IReviewRepository, ReviewRepository>();
-            services.AddScoped<IReviewService, ReviewService>();
+            services.AddScoped<IReviewService, BLL.Service.ReviewService>();
 
 
-            services.AddScoped<ITokenService,TokenService>();
+            services.AddScoped<ITokenService,BLL.Service.TokenService>();
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IOrderItemRepository, OrderItemRepository>();
             services.AddScoped<IOrderService, OrderService>();
-            services.AddScoped<ICheckoutService, CheckoutService>();
+            services.AddScoped<ICheckoutService, BLL.Service.CheckoutService>();
+
+           
+            services.AddFluentValidationAutoValidation();
+            services.AddValidatorsFromAssemblyContaining<ProductValidation>();
 
             services.AddExceptionHandler<GlobalExceptionHandler>();
             services.AddProblemDetails();

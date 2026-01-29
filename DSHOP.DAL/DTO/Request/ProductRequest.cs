@@ -1,4 +1,5 @@
 ﻿using DSHOP.DAL.Models;
+using DSHOP.DAL.Validations;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace DSHOP.DAL.DTO.Request
         public List<IFormFile> SubImages { get; set; }
         public decimal Price { get; set; }
         public int Quantity { get; set; }
+        [MinValue(5)]
         public decimal Discount { get; set; }
         public double Rate { get; set; }
         public IFormFile MainImage { get; set; }
