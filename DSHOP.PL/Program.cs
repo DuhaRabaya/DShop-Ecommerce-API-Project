@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Stripe;
 using System.Data;
@@ -26,6 +27,18 @@ namespace DSHOP.PL
         public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  policy =>
+                                  {
+                                      policy.WithOrigins().AllowAnyMethod().AllowAnyHeader();
+                                  });
+            });
+
+
 
             // Add services to the container.
 
@@ -33,6 +46,7 @@ namespace DSHOP.PL
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
+           
 
             builder.Services.AddDbContext<ApplicationDbContext>
                 (options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -131,7 +145,7 @@ namespace DSHOP.PL
             AppConfiguration.Config(builder.Services);
             MapsterConfig.MapsterConfRegister();
             var app = builder.Build();
-
+            app.UseCors(MyAllowSpecificOrigins);
             //Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
