@@ -15,5 +15,7 @@ namespace DSHOP.DAL.DTO.Response
         public double Rate { get; set; }
         public string MainImage { get; set; }
         public string Description { get; set; }
+        public List<ReviewResponse> Reviews { get; set; }
+        public List<string> SubImages { get; set; }
     }
 }

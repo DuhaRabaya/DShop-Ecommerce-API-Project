@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.bll\\service\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|solutionrelative:dshop.bll\\service\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.dal\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|solutionrelative:dshop.dal\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.dal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|solutionrelative:dshop.dal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.bll\\mapsterconfigurations\\mapsterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|solutionrelative:dshop.bll\\mapsterconfigurations\\mapsterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.dal\\dto\\response\\reviewresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|solutionrelative:dshop.dal\\dto\\response\\reviewresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.dal\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|solutionrelative:dshop.dal\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.pl\\areas\\user\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926AC2CD-18A5-4081-8003-0267C849F4D3}|DSHOP.PL\\DSHOP.PL.csproj|solutionrelative:dshop.pl\\areas\\user\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.dal\\dto\\response\\productuserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|solutionrelative:dshop.dal\\dto\\response\\productuserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.dal\\dto\\response\\categoryuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|solutionrelative:dshop.dal\\dto\\response\\categoryuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.bll\\service\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B87B600-DA96-485E-AE2A-8F00E1530D2C}|DSHOP.BLL\\DSHOP.BLL.csproj|solutionrelative:dshop.bll\\service\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E13B3521-D750-4ED8-AC81-04F55B2379D6}|DSHOP.DAL\\DSHOP.DAL.csproj|c:\\users\\msii\\onedrive\\desktop\\asp\\c#\\dshop\\dshop.dal\\repository\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,24 +58,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IReviewRepository.cs",
-              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Repository\\IReviewRepository.cs",
-              "RelativeDocumentMoniker": "DSHOP.DAL\\Repository\\IReviewRepository.cs",
-              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Repository\\IReviewRepository.cs",
-              "RelativeToolTip": "DSHOP.DAL\\Repository\\IReviewRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "MapsterConfig.cs",
+              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\MapsterConfigurations\\MapsterConfig.cs",
+              "RelativeDocumentMoniker": "DSHOP.BLL\\MapsterConfigurations\\MapsterConfig.cs",
+              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\MapsterConfigurations\\MapsterConfig.cs",
+              "RelativeToolTip": "DSHOP.BLL\\MapsterConfigurations\\MapsterConfig.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T14:05:11.946Z",
+              "WhenOpened": "2026-01-29T12:55:59.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Repository\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "DSHOP.DAL\\Repository\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Repository\\ProductRepository.cs",
+              "RelativeToolTip": "DSHOP.DAL\\Repository\\ProductRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T12:54:33.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "DSHOP.DAL\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Models\\Product.cs",
+              "RelativeToolTip": "DSHOP.DAL\\Models\\Product.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T12:53:46.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Areas\\User\\ProductsController.cs",
+              "RelativeDocumentMoniker": "DSHOP.PL\\Areas\\User\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.PL\\Areas\\User\\ProductsController.cs",
+              "RelativeToolTip": "DSHOP.PL\\Areas\\User\\ProductsController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T12:51:57.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductUserDetails.cs",
+              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\DTO\\Response\\ProductUserDetails.cs",
+              "RelativeDocumentMoniker": "DSHOP.DAL\\DTO\\Response\\ProductUserDetails.cs",
+              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\DTO\\Response\\ProductUserDetails.cs",
+              "RelativeToolTip": "DSHOP.DAL\\DTO\\Response\\ProductUserDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T12:49:10.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReviewResponse.cs",
+              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\DTO\\Response\\ReviewResponse.cs",
+              "RelativeDocumentMoniker": "DSHOP.DAL\\DTO\\Response\\ReviewResponse.cs",
+              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\DTO\\Response\\ReviewResponse.cs",
+              "RelativeToolTip": "DSHOP.DAL\\DTO\\Response\\ReviewResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T12:46:33.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryUserResponse.cs",
+              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\DTO\\Response\\CategoryUserResponse.cs",
+              "RelativeDocumentMoniker": "DSHOP.DAL\\DTO\\Response\\CategoryUserResponse.cs",
+              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\DTO\\Response\\CategoryUserResponse.cs",
+              "RelativeToolTip": "DSHOP.DAL\\DTO\\Response\\CategoryUserResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T12:46:08.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ReviewRepository.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Repository\\ReviewRepository.cs",
               "RelativeDocumentMoniker": "DSHOP.DAL\\Repository\\ReviewRepository.cs",
@@ -55,38 +161,49 @@
               "RelativeToolTip": "DSHOP.DAL\\Repository\\ReviewRepository.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T14:00:09.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T14:00:09.064Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Repository\\OrderRepository.cs",
               "RelativeDocumentMoniker": "DSHOP.DAL\\Repository\\OrderRepository.cs",
               "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Repository\\OrderRepository.cs",
               "RelativeToolTip": "DSHOP.DAL\\Repository\\OrderRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwDoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-26T13:06:36.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
+              "Title": "IReviewRepository.cs",
+              "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Repository\\IReviewRepository.cs",
+              "RelativeDocumentMoniker": "DSHOP.DAL\\Repository\\IReviewRepository.cs",
+              "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.DAL\\Repository\\IReviewRepository.cs",
+              "RelativeToolTip": "DSHOP.DAL\\Repository\\IReviewRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T14:05:11.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ReviewService.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\ReviewService.cs",
               "RelativeDocumentMoniker": "DSHOP.BLL\\Service\\ReviewService.cs",
               "ToolTip": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\ReviewService.cs",
               "RelativeToolTip": "DSHOP.BLL\\Service\\ReviewService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-26T13:02:26.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "IReviewService.cs",
               "DocumentMoniker": "C:\\Users\\msii\\OneDrive\\Desktop\\asp\\c#\\DSHOP\\DSHOP.BLL\\Service\\IReviewService.cs",
               "RelativeDocumentMoniker": "DSHOP.BLL\\Service\\IReviewService.cs",
@@ -94,8 +211,7 @@
               "RelativeToolTip": "DSHOP.BLL\\Service\\IReviewService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T13:01:17.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T13:01:17.699Z"
             }
           ]
         }

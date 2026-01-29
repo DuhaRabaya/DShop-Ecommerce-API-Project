@@ -1,6 +1,7 @@
 ﻿using DSHOP.BLL.Service;
 using DSHOP.DAL.DTO.Request;
 using DSHOP.PL.Resources;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
@@ -10,6 +11,7 @@ namespace DSHOP.PL.Areas.User
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class ProductsController : ControllerBase
     {
       

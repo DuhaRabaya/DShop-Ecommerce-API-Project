@@ -18,5 +18,6 @@ namespace DSHOP.DAL.Models
 
         public List<ProductTranslations> Translations { get; set; } 
         public List<ProductImage> SubImages { get; set; }
+        public List<Review> Reviews { get; set; }
     }
 }
