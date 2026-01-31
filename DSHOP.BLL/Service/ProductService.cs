@@ -1,5 +1,6 @@
 ﻿using DSHOP.DAL.DTO.Request;
 using DSHOP.DAL.DTO.Response;
+using DSHOP.DAL.Migrations;
 using DSHOP.DAL.Models;
 using DSHOP.DAL.Repository;
 using Mapster;
@@ -107,9 +108,98 @@ namespace DSHOP.BLL.Service
         public async Task<ProductUserDetails> GetProductDetailsForUser(int id, string lang = "en")
         {
             var product = await _productRepository.FindByIdAsync(id);
-           var response = product.BuildAdapter().AddParameters("lang", lang).AdaptToType<ProductUserDetails>();
-
+            if(product is null)
+            {
+                return new ProductUserDetails()
+                {
+                    Success = false,
+                    Message="product not found!"
+                };
+            }
+            var response = product.BuildAdapter().AddParameters("lang", lang).AdaptToType<ProductUserDetails>();
+            response.Success = true;
             return response;
+        }
+        public async Task<BaseResponse> DeleteProductAsync(int productId)
+        {
+            var product = await _productRepository.FindByIdAsync(productId);
+            if (product == null)
+            {
+                return new BaseResponse
+                {
+                    Success = false,
+                    Message = "product not found"
+                };
+            }
+
+            await _productRepository.RemoveAsync(product);
+
+            return new BaseResponse
+            {
+                Success = true,
+                Message = "product deleted successfully"
+            };
+        }
+
+        public async Task<BaseResponse> UpdateProductAsync(int productId,UpdateProductRequest request)
+        {
+            var product = await _productRepository.FindByIdAsync(productId);
+            if (product == null)
+            {
+                return new BaseResponse
+                {
+                    Success = false,
+                    Message = "Product not found"
+                };
+            }
+            if (request.Price.HasValue) product.Price=request.Price.Value;
+            if (request.Quantity.HasValue)product.Quantity = request.Quantity.Value;
+            if (request.Discount.HasValue)product.Discount = request.Discount.Value;
+            if (request.CategoryId.HasValue)product.CategoryId = request.CategoryId.Value;
+
+            if (request.MainImage != null)
+            {
+                var path = await _fileService.UploadFile(request.MainImage);
+                product.MainImage = path;
+            }
+
+            if (request.SubImages != null)
+            { 
+                foreach (var image in request.SubImages)
+                {
+                    var path = await _fileService.UploadFile(image);
+                    product.SubImages.Add(new ProductImage { ImageName = path });
+                }
+            }
+            if (request.Translations != null)
+            {
+                foreach (var translation in request.Translations)
+                {
+                    var existing = product.Translations.FirstOrDefault(t => t.Language == translation.Language);
+
+                    if (existing is not null)
+                    {
+                        existing.Name = translation.Name;
+
+                    }
+                    else
+                    {
+                        product.Translations.Add(new ProductTranslations
+                        {
+                            Name = translation.Name,
+                            Language = translation.Language,
+                        });
+                    }
+                }
+            }
+
+            await _productRepository.UpdateAsync(product);
+
+            return new BaseResponse
+            {
+                Success = true,
+                Message = "Product updated successfully"
+            };
         }
     }
 }

@@ -15,5 +15,7 @@ namespace DSHOP.DAL.Repository
         Task<Product?> FindByIdAsync(int id);
         Task<bool> DecreaseQuantities(List<(int ProductId, int Quantitiy)> items);
         IQueryable<Product> Query();
+        Task RemoveAsync(Product product);
+        Task UpdateAsync(Product product);
     }
 }

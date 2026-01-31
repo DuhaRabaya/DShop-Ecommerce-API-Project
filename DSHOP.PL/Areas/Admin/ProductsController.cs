@@ -33,5 +33,20 @@ namespace DSHOP.PL.Areas.Admin
             var products = await _productService.GetAllAsyncForAdmin();
             return Ok(new { Message = _localizer["Success"].Value, products });
         }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteProduct([FromRoute] int id)
+        {
+            var response = await _productService.DeleteProductAsync(id);
+
+            if (!response.Success) return BadRequest(response);
+            return Ok(response);
+        }
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> UpdateProduct([FromRoute] int id, [FromForm]UpdateProductRequest request)
+        {
+            var response = await _productService.UpdateProductAsync(id, request);
+            if (!response.Success) return BadRequest(response);
+            return Ok(response);
+        }
     }
 }

@@ -37,8 +37,9 @@ namespace DSHOP.PL.Areas.User
         [HttpGet("{id}")]
         public async Task<IActionResult> Index([FromRoute]int id ,[FromQuery] string lang = "en")
         {
-            var products = await _productService.GetProductDetailsForUser(id,lang);
-            return Ok(new { Message = _localizer["Success"].Value, products });
+            var product = await _productService.GetProductDetailsForUser(id,lang);
+            if (!product.Success) return BadRequest(product);
+            return Ok(product);
         }
         [HttpPost("review/{productId}")]
         [Authorize]

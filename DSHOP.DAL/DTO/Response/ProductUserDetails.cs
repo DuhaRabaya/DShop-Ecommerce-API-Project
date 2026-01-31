@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSHOP.DAL.DTO.Response
 {
-    public class ProductUserDetails
+    public class ProductUserDetails : BaseResponse
     {
         public int Id { get; set; }
         public decimal Price { get; set; }

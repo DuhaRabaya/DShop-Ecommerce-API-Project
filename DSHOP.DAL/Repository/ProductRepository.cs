@@ -55,6 +55,16 @@ namespace DSHOP.DAL.Repository
         public IQueryable<Product> Query() {
             return _context.Products.Include(p=>p.Translations).AsQueryable();
         }
+        public async Task RemoveAsync(Product product)
+        {
+            _context.Products.Remove(product);
+            await _context.SaveChangesAsync();
+        }
 
+        public async Task UpdateAsync(Product product)
+        {
+            _context.Products.Update(product);
+            await _context.SaveChangesAsync();
+        }
     }
 }

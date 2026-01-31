@@ -16,5 +16,7 @@ namespace DSHOP.BLL.Service
              int? categoryId = null, decimal? minPrice = null, decimal? maxPrice = null,
              string? sortBy = null, bool asc = true);
         Task<ProductUserDetails> GetProductDetailsForUser(int id, string lang = "en");
+        Task<BaseResponse> DeleteProductAsync(int productId);
+        Task<BaseResponse> UpdateProductAsync(int productId, UpdateProductRequest request);
     }
 }
