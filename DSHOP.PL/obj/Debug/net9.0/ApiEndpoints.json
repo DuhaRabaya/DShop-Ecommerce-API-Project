@@ -531,6 +531,16 @@
   },
   {
     "ContainingType": "DSHOP.PL.Areas.User.CheckoutController",
+    "Method": "Cancel",
+    "RelativePath": "api/Checkout/cancel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DSHOP.PL.Areas.User.CheckoutController",
     "Method": "Success",
     "RelativePath": "api/Checkout/success",
     "HttpMethod": "GET",

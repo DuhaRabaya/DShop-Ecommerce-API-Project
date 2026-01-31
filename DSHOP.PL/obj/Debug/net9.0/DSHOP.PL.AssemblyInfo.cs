@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("bb053ff3-a71f-455c-93fc-3f65854ad807")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("DSHOP.PL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5561f6b4c7a2ba73b6cb7c36eff039c2938d291a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d26aff5aa223d0ba89a6f385e73ea4ba53c9ec0")]
 [assembly: System.Reflection.AssemblyProductAttribute("DSHOP.PL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DSHOP.PL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

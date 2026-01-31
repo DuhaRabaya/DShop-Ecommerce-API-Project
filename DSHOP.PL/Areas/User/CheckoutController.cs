@@ -1,5 +1,6 @@
 ﻿using DSHOP.BLL.Service;
 using DSHOP.DAL.DTO.Request;
+using DSHOP.DAL.DTO.Response;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -44,6 +45,16 @@ namespace DSHOP.PL.Areas.User
                 return BadRequest(response);
             }
             return Ok(response);
+        }
+        [HttpGet("cancel")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Cancel()
+        {
+            return Ok(new CheckoutResponse
+            {
+                Success = false,
+                Message = "Payment was canceled by the user."
+            });
         }
     }
 }

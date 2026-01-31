@@ -4,6 +4,7 @@ using DSHOP.DAL.Repository;
 using Mapster;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,14 @@ namespace DSHOP.BLL.Service
         public async Task<BaseResponse> UpdateOrderStatus(int orderId, OrderStatusEnum newStatus)
         {
             var order=await _orderRepository.GetOrderById(orderId);
+            if(order is null)
+            {
+                return new BaseResponse()
+                {
+                    Success = false,
+                    Message = "order not found!"
+                };
+            }
             order.OrderStatus = newStatus;
             if (newStatus == OrderStatusEnum.Delivered)
             {

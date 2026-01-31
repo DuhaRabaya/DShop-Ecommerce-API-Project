@@ -27,6 +27,7 @@ namespace DSHOP.PL.Areas.User
         {
             var user=User.FindFirstValue(ClaimTypes.NameIdentifier);
             var result=await _cartService.AddToCartAsync(user, request);
+            if(!result.Success) return BadRequest(result);
             return Ok(result);
         }
         [HttpGet("")]
@@ -49,6 +50,7 @@ namespace DSHOP.PL.Areas.User
         {
             var user = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var result= await _cartService.RemoveFromCart(user,id);
+            if(!result.Success) return BadRequest(result);
             return Ok(result);
         }
 

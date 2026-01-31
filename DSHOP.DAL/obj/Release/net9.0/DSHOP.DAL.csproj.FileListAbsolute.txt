@@ -1,0 +1,15 @@
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\bin\Release\net9.0\DSHOP.DAL.deps.json
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\bin\Release\net9.0\DSHOP.DAL.runtimeconfig.json
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\bin\Release\net9.0\DSHOP.DAL.dll
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\bin\Release\net9.0\DSHOP.DAL.pdb
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\obj\Release\net9.0\DSHOP.DAL.csproj.AssemblyReference.cache
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\obj\Release\net9.0\DSHOP.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\obj\Release\net9.0\DSHOP.DAL.AssemblyInfoInputs.cache
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\obj\Release\net9.0\DSHOP.DAL.AssemblyInfo.cs
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\obj\Release\net9.0\DSHOP.DAL.csproj.CoreCompileInputs.cache
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\obj\Release\net9.0\DSHOP.DAL.sourcelink.json
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\obj\Release\net9.0\DSHOP.DAL.dll
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\obj\Release\net9.0\refint\DSHOP.DAL.dll
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\obj\Release\net9.0\DSHOP.DAL.pdb
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\obj\Release\net9.0\DSHOP.DAL.genruntimeconfig.cache
+C:\Users\msii\OneDrive\Desktop\asp\c#\DSHOP\DSHOP.DAL\obj\Release\net9.0\ref\DSHOP.DAL.dll
