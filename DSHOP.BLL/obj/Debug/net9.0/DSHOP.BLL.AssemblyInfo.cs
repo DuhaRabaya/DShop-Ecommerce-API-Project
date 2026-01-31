@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DSHOP.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8415c27f9b0cc2cf558e9bf4915f47f542ec2ed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d88bd472837c15da726e0e74bc9e836e7cc77f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("DSHOP.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DSHOP.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -41,6 +41,7 @@ namespace DSHOP.PL.Areas.User
             return Ok(new { Message = _localizer["Success"].Value, products });
         }
         [HttpPost("review/{productId}")]
+        [Authorize]
         public async Task<IActionResult> AddReview([FromBody] ReviewRequest request, [FromRoute] int productId)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -61,7 +62,18 @@ namespace DSHOP.PL.Areas.User
 
             return Ok(response);
         }
+        [HttpPatch("review/{productId}")]
+        [Authorize]
+        public async Task<IActionResult> UpdateReview([FromRoute] int productId , [FromBody] ReviewRequest request)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
+            var response = await _reviewService.UpdateReview(userId, productId ,request);
 
+            if (!response.Success)
+                return BadRequest(response);
+
+            return Ok(response);
+        }
     }
 }

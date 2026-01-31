@@ -46,5 +46,10 @@ namespace DSHOP.DAL.Repository
                     r.ProductId == productId);
         }
 
+        public async Task UpdateReview(Review review)
+        {
+            _context.Reviews.Update(review);
+            await _context.SaveChangesAsync();
+        }
     }
 }

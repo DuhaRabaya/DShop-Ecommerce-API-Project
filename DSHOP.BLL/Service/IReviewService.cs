@@ -12,6 +12,7 @@ namespace DSHOP.BLL.Service
     {
         Task<BaseResponse> AddReview(string userId, int productId, ReviewRequest review);
         Task<BaseResponse> RemoveReview(string userId, int productId);
+        Task<BaseResponse> UpdateReview(string userId, int productId, ReviewRequest request);
 
     }
 }

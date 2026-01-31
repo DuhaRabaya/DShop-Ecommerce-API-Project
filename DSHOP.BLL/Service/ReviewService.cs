@@ -73,6 +73,28 @@ namespace DSHOP.BLL.Service
             };
         }
 
+        public async Task<BaseResponse> UpdateReview(string userId, int productId , ReviewRequest request)
+        {
+            var review = await _reviewRepository.GetUserReviewForProduct(userId, productId);
+            if (review == null)
+            {
+                return new BaseResponse
+                {
+                    Success = false,
+                    Message = "review not found"
+                };
+            }
+            review.Rate = request.Rate;
+            review.Comment = request.Comment;
+            await _reviewRepository.UpdateReview(review);
+
+            return new BaseResponse
+            {
+                Success = true,
+                Message = "review updated successfully"
+            };
+        }
+
 
     }
 }

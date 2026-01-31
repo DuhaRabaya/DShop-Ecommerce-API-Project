@@ -12,6 +12,7 @@ namespace DSHOP.DAL.Repository
         Task<bool> HasReview(int productId, string userId);
         Task<Review> AddReview(Review review);
         Task RemoveReview(Review review);
+        Task UpdateReview(Review review);
         Task<List<Review>> GetReviews(int productId);
         Task<Review?> GetUserReviewForProduct(string userId, int productId);
 
