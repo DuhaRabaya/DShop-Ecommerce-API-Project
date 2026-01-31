@@ -48,6 +48,20 @@ namespace DSHOP.PL.Areas.User
             if(!response.Success)return BadRequest(response);
             return Ok(response);
         }
+        [HttpDelete("review/{productId}")]
+        [Authorize]
+        public async Task<IActionResult> RemoveReview([FromRoute] int productId)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var response = await _reviewService.RemoveReview(userId, productId);
+
+            if (!response.Success)
+                return BadRequest(response);
+
+            return Ok(response);
+        }
+
 
     }
-    }
+}

@@ -11,5 +11,7 @@ namespace DSHOP.BLL.Service
     public interface IReviewService
     {
         Task<BaseResponse> AddReview(string userId, int productId, ReviewRequest review);
+        Task<BaseResponse> RemoveReview(string userId, int productId);
+
     }
 }

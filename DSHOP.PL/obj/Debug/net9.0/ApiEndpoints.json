@@ -575,5 +575,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DSHOP.PL.Areas.User.ProductsController",
+    "Method": "RemoveReview",
+    "RelativePath": "api/Products/review/{productId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

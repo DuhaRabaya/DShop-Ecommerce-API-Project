@@ -51,6 +51,28 @@ namespace DSHOP.BLL.Service
                 Message = "review added successfully"
             };
         }
-       
+
+        public async Task<BaseResponse> RemoveReview(string userId, int productId)
+        {
+            var review = await _reviewRepository.GetUserReviewForProduct(userId, productId);
+            if (review == null)
+            {
+                return new BaseResponse
+                {
+                    Success = false,
+                    Message = "review not found"
+                };
+            }
+
+            await _reviewRepository.RemoveReview(review);
+
+            return new BaseResponse
+            {
+                Success = true,
+                Message = "review removed successfully"
+            };
+        }
+
+
     }
 }

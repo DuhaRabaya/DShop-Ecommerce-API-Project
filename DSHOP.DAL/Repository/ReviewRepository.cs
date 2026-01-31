@@ -39,5 +39,12 @@ namespace DSHOP.DAL.Repository
              _context.Reviews.Remove(review);
             await _context.SaveChangesAsync();
         }
+        public async Task<Review?> GetUserReviewForProduct(string userId, int productId)
+        {
+            return await _context.Reviews.FirstOrDefaultAsync(r =>
+                    r.UserId == userId &&
+                    r.ProductId == productId);
+        }
+
     }
 }
